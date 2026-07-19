@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXTargetDependency section */
+		A1B2C3D4E5F69001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1B2C3D4E5F64001 /* SMBWatcher */;
+			targetProxy = A1B2C3D4E5F69002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		A1B2C3D4E5F69002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B2C3D4E5F67001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B2C3D4E5F64001;
+			remoteInfo = SMBWatcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXBuildFile section */
+		A1B2C3D4E5F60001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61001 /* AppDelegate.swift */; };
+		A1B2C3D4E5F60002 /* WatchedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61002 /* WatchedInstance.swift */; };
+		A1B2C3D4E5F60003 /* InstanceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61003 /* InstanceStatus.swift */; };
+		A1B2C3D4E5F60004 /* ConfigStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61004 /* ConfigStore.swift */; };
+		A1B2C3D4E5F60005 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61005 /* KeychainService.swift */; };
+		A1B2C3D4E5F60006 /* PortReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61006 /* PortReachability.swift */; };
+		A1B2C3D4E5F60007 /* MountHealthChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61007 /* MountHealthChecker.swift */; };
+		A1B2C3D4E5F60008 /* MountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61008 /* MountManager.swift */; };
+		A1B2C3D4E5F60009 /* WatcherEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61009 /* WatcherEngine.swift */; };
+		A1B2C3D4E5F60010 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61010 /* StatusBarController.swift */; };
+		A1B2C3D4E5F60011 /* AddInstanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61011 /* AddInstanceView.swift */; };
+		A1B2C3D4E5F60012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61012 /* Assets.xcassets */; };
+		A1B2C3D4E5F60013 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61015 /* main.swift */; };
+		A1B2C3D4E5F60020 /* ConfigStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61020 /* ConfigStoreTests.swift */; };
+		A1B2C3D4E5F60021 /* WatcherEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61021 /* WatcherEngineTests.swift */; };
+		A1B2C3D4E5F60022 /* PortReachabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61022 /* PortReachabilityTests.swift */; };
+		A1B2C3D4E5F60030 /* MountManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61030 /* MountManagerTests.swift */; };
+		A1B2C3D4E5F60031 /* KeychainServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61031 /* KeychainServiceTests.swift */; };
+		A1B2C3D4E5F60032 /* InputValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61032 /* InputValidationTests.swift */; };
+		A1B2C3D4E5F60033 /* MountHealthCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F61033 /* MountHealthCheckerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1B2C3D4E5F61001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F61002 /* WatchedInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchedInstance.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F61003 /* InstanceStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceStatus.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F61004 /* ConfigStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigStore.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F61005 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F61006 /* PortReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortReachability.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F61007 /* MountHealthChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountHealthChecker.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F61008 /* MountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountManager.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F61009 /* WatcherEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatcherEngine.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F61010 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F61011 /* AddInstanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInstanceView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F61012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1B2C3D4E5F61013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B2C3D4E5F61015 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F61014 /* SMBWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMBWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D4E5F61020 /* ConfigStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConfigStoreTests.swift; path = SMBWatcherTests/ConfigStoreTests.swift; sourceTree = SOURCE_ROOT; };
+		A1B2C3D4E5F61021 /* WatcherEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WatcherEngineTests.swift; path = SMBWatcherTests/WatcherEngineTests.swift; sourceTree = SOURCE_ROOT; };
+		A1B2C3D4E5F61022 /* PortReachabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PortReachabilityTests.swift; path = SMBWatcherTests/PortReachabilityTests.swift; sourceTree = SOURCE_ROOT; };
+		A1B2C3D4E5F61030 /* MountManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MountManagerTests.swift; path = SMBWatcherTests/MountManagerTests.swift; sourceTree = SOURCE_ROOT; };
+		A1B2C3D4E5F61031 /* KeychainServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeychainServiceTests.swift; path = SMBWatcherTests/KeychainServiceTests.swift; sourceTree = SOURCE_ROOT; };
+		A1B2C3D4E5F61032 /* InputValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputValidationTests.swift; path = SMBWatcherTests/InputValidationTests.swift; sourceTree = SOURCE_ROOT; };
+		A1B2C3D4E5F61033 /* MountHealthCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MountHealthCheckerTests.swift; path = SMBWatcherTests/MountHealthCheckerTests.swift; sourceTree = SOURCE_ROOT; };
+		A1B2C3D4E5F61023 /* SMBWatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMBWatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1B2C3D4E5F62001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B2C3D4E5F62002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1B2C3D4E5F63001 = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F63002 /* SMBWatcher */,
+				A1B2C3D4E5F63009 /* SMBWatcherTests */,
+				A1B2C3D4E5F63008 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F63002 /* SMBWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F61015 /* main.swift */,
+				A1B2C3D4E5F61001 /* AppDelegate.swift */,
+				A1B2C3D4E5F61013 /* Info.plist */,
+				A1B2C3D4E5F63003 /* Models */,
+				A1B2C3D4E5F63004 /* Services */,
+				A1B2C3D4E5F63005 /* UI */,
+				A1B2C3D4E5F63006 /* Resources */,
+			);
+			path = SMBWatcher;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F63003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F61002 /* WatchedInstance.swift */,
+				A1B2C3D4E5F61003 /* InstanceStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F63004 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F61004 /* ConfigStore.swift */,
+				A1B2C3D4E5F61005 /* KeychainService.swift */,
+				A1B2C3D4E5F61006 /* PortReachability.swift */,
+				A1B2C3D4E5F61007 /* MountHealthChecker.swift */,
+				A1B2C3D4E5F61008 /* MountManager.swift */,
+				A1B2C3D4E5F61009 /* WatcherEngine.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F63005 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F61010 /* StatusBarController.swift */,
+				A1B2C3D4E5F61011 /* AddInstanceView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F63006 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F61012 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F63008 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F61014 /* SMBWatcher.app */,
+				A1B2C3D4E5F61023 /* SMBWatcherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F63009 /* SMBWatcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F61020 /* ConfigStoreTests.swift */,
+				A1B2C3D4E5F61021 /* WatcherEngineTests.swift */,
+				A1B2C3D4E5F61022 /* PortReachabilityTests.swift */,
+				A1B2C3D4E5F61030 /* MountManagerTests.swift */,
+				A1B2C3D4E5F61031 /* KeychainServiceTests.swift */,
+				A1B2C3D4E5F61032 /* InputValidationTests.swift */,
+				A1B2C3D4E5F61033 /* MountHealthCheckerTests.swift */,
+			);
+			path = SMBWatcherTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1B2C3D4E5F64001 /* SMBWatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B2C3D4E5F66003 /* Build configuration list for PBXNativeTarget "SMBWatcher" */;
+			buildPhases = (
+				A1B2C3D4E5F65001 /* Sources */,
+				A1B2C3D4E5F62001 /* Frameworks */,
+				A1B2C3D4E5F65002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMBWatcher;
+			productName = SMBWatcher;
+			productReference = A1B2C3D4E5F61014 /* SMBWatcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1B2C3D4E5F64002 /* SMBWatcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B2C3D4E5F66004 /* Build configuration list for PBXNativeTarget "SMBWatcherTests" */;
+			buildPhases = (
+				A1B2C3D4E5F65003 /* Sources */,
+				A1B2C3D4E5F62002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1B2C3D4E5F69001 /* PBXTargetDependency */,
+			);
+			name = SMBWatcherTests;
+			productName = SMBWatcherTests;
+			productReference = A1B2C3D4E5F61023 /* SMBWatcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1B2C3D4E5F67001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A1B2C3D4E5F64001 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = A1B2C3D4E5F66001 /* Build configuration list for PBXProject "SMBWatcher" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1B2C3D4E5F63001;
+			productRefGroup = A1B2C3D4E5F63008 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1B2C3D4E5F64001 /* SMBWatcher */,
+				A1B2C3D4E5F64002 /* SMBWatcherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1B2C3D4E5F65002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D4E5F60012 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1B2C3D4E5F65001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D4E5F60013 /* main.swift in Sources */,
+				A1B2C3D4E5F60001 /* AppDelegate.swift in Sources */,
+				A1B2C3D4E5F60002 /* WatchedInstance.swift in Sources */,
+				A1B2C3D4E5F60003 /* InstanceStatus.swift in Sources */,
+				A1B2C3D4E5F60004 /* ConfigStore.swift in Sources */,
+				A1B2C3D4E5F60005 /* KeychainService.swift in Sources */,
+				A1B2C3D4E5F60006 /* PortReachability.swift in Sources */,
+				A1B2C3D4E5F60007 /* MountHealthChecker.swift in Sources */,
+				A1B2C3D4E5F60008 /* MountManager.swift in Sources */,
+				A1B2C3D4E5F60009 /* WatcherEngine.swift in Sources */,
+				A1B2C3D4E5F60010 /* StatusBarController.swift in Sources */,
+				A1B2C3D4E5F60011 /* AddInstanceView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B2C3D4E5F65003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D4E5F60020 /* ConfigStoreTests.swift in Sources */,
+				A1B2C3D4E5F60021 /* WatcherEngineTests.swift in Sources */,
+				A1B2C3D4E5F60022 /* PortReachabilityTests.swift in Sources */,
+				A1B2C3D4E5F60030 /* MountManagerTests.swift in Sources */,
+				A1B2C3D4E5F60031 /* KeychainServiceTests.swift in Sources */,
+				A1B2C3D4E5F60032 /* InputValidationTests.swift in Sources */,
+				A1B2C3D4E5F60033 /* MountHealthCheckerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1B2C3D4E5F68001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1B2C3D4E5F68002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A1B2C3D4E5F68003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SMBWatcher/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smbwatcher.SMBWatcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1B2C3D4E5F68004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SMBWatcher/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smbwatcher.SMBWatcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A1B2C3D4E5F68005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smbwatcher.SMBWatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMBWatcher.app/Contents/MacOS/SMBWatcher";
+			};
+			name = Debug;
+		};
+		A1B2C3D4E5F68006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smbwatcher.SMBWatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMBWatcher.app/Contents/MacOS/SMBWatcher";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1B2C3D4E5F66001 /* Build configuration list for PBXProject "SMBWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3D4E5F68001 /* Debug */,
+				A1B2C3D4E5F68002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B2C3D4E5F66003 /* Build configuration list for PBXNativeTarget "SMBWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3D4E5F68003 /* Debug */,
+				A1B2C3D4E5F68004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B2C3D4E5F66004 /* Build configuration list for PBXNativeTarget "SMBWatcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3D4E5F68005 /* Debug */,
+				A1B2C3D4E5F68006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = A1B2C3D4E5F67001 /* Project object */;
+}

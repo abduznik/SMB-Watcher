@@ -1,0 +1,62 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: macos-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache DerivedData
+        uses: actions/cache@v4
+        with:
+          path: ~/Library/Developer/Xcode/DerivedData/SMBWatcher-*
+          key: deriveddata-${{ hashFiles('**/*.swift', '**/*.pbxproj') }}
+          restore-keys: deriveddata-
+
+      - name: Build Release
+        run: |
+          set -o pipefail
+          xcodebuild build \
+            -project SMBWatcher/SMBWatcher.xcodeproj \
+            -scheme SMBWatcher \
+            -configuration Release \
+            -destination 'platform=macOS' \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO | xcpretty
+
+      - name: Package
+        run: |
+          # Note: Code signing and notarization are future steps for v0.2.0+
+          # For v0.1.0, we ship an unsigned .zip — users can right-click > Open
+          cd build/Release
+          zip -r ../../SMBWatcher.zip SMBWatcher.app
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          files: SMBWatcher.zip
+          body: |
+            ## SMBWatcher ${{ github.ref_name }}
+
+            A macOS menu bar app that watches SMB network shares and automatically remounts them when they drop.
+
+            ### Installation
+            1. Download `SMBWatcher.zip` below
+            2. Unzip and drag `SMBWatcher.app` to `/Applications/`
+            3. Open SMBWatcher — it appears in the menu bar
+
+            > **Note:** This build is unsigned. Right-click > Open the first time, or allow it in System Settings > Privacy & Security.
+
+            ### What's New
+            - Two-stage health checks (port reachability + mount liveness)
+            - Automatic remount with exponential backoff
+            - Keychain credential storage
+            - User notifications on mount failure

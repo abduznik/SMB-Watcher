@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  build-and-test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache DerivedData
+        uses: actions/cache@v4
+        with:
+          path: ~/Library/Developer/Xcode/DerivedData/SMBWatcher-*
+          key: deriveddata-${{ hashFiles('**/*.swift', '**/*.pbxproj') }}
+          restore-keys: deriveddata-
+
+      - name: Build
+        run: |
+          set -o pipefail
+          xcodebuild build \
+            -project SMBWatcher/SMBWatcher.xcodeproj \
+            -scheme SMBWatcher \
+            -destination 'platform=macOS' \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO | xcpretty
+
+      - name: Test
+        run: |
+          set -o pipefail
+          xcodebuild test \
+            -project SMBWatcher/SMBWatcher.xcodeproj \
+            -scheme SMBWatcher \
+            -destination 'platform=macOS' \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO | xcpretty
