@@ -8,14 +8,6 @@
 
 A macOS menu bar app that watches SMB network shares and automatically remounts them when they drop.
 
-# Support the Project
-
-SMBWatcher is a solo passion project — built and maintained in my spare time, with AI tools I pay for out of pocket. If it saves you time or keeps your NAS mounts alive, a small contribution genuinely helps keep it going.
-
-[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?logo=github)](https://github.com/sponsors/abduznik)
-
-No pressure at all — the app is and will always be free.
-
 ## Features
 
 - **Menu bar app** — lives in the status bar next to WiFi/battery (no Dock icon)
@@ -35,8 +27,8 @@ No pressure at all — the app is and will always be free.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/smbwatcher.git
-   cd smbwatcher
+   git clone https://github.com/abduznik/SMB-Watcher.git
+   cd SMB-Watcher
    ```
 
 2. Open the Xcode project:

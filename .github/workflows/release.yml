@@ -41,14 +41,18 @@ jobs:
         run: |
           # Note: Code signing and notarization are future steps for v0.2.0+
           # For v0.1.0, we ship an unsigned .zip — users can right-click > Open
-          cd build/Release
-          zip -r SMBWatcher.zip SMBWatcher.app
+          APP_PATH=$(find ~/Library/Developer/Xcode/DerivedData/SMBWatcher-*/Build/Products/Release -name "SMBWatcher.app" -maxdepth 1 | head -1)
+          if [ -z "$APP_PATH" ]; then
+            echo "SMBWatcher.app not found in DerivedData"
+            exit 1
+          fi
+          zip -r SMBWatcher.zip "$APP_PATH"
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: macos-release
-          path: build/Release/SMBWatcher.zip
+          path: SMBWatcher.zip
 
   release:
     name: Create Release
