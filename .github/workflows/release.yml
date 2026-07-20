@@ -40,19 +40,20 @@ jobs:
       - name: Package
         run: |
           # Note: Code signing and notarization are future steps for v0.2.0+
-          # For v0.1.0, we ship an unsigned .zip — users can right-click > Open
+          # For v0.1.0, we ship an unsigned .app — users can right-click > Open
           APP_PATH=$(find ~/Library/Developer/Xcode/DerivedData/SMBWatcher-*/Build/Products/Release -name "SMBWatcher.app" -maxdepth 1 | head -1)
           if [ -z "$APP_PATH" ]; then
             echo "SMBWatcher.app not found in DerivedData"
             exit 1
           fi
-          zip -r SMBWatcher.zip "$APP_PATH"
+          cp -R "$APP_PATH" .
+          echo "APP_PATH=SMBWatcher.app" >> $GITHUB_ENV
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: macos-release
-          path: SMBWatcher.zip
+          path: SMBWatcher.app
 
   release:
     name: Create Release
@@ -75,7 +76,7 @@ jobs:
         with:
           tag_name: ${{ github.event.inputs.version }}
           name: SMBWatcher ${{ github.event.inputs.version }}
-          files: artifacts/SMBWatcher.zip
+          files: artifacts/SMBWatcher.app
           fail_on_unmatched_files: false
           draft: false
           prerelease: ${{ github.event.inputs.prerelease == 'true' }}
@@ -85,8 +86,8 @@ jobs:
             A macOS menu bar app that watches SMB network shares and automatically remounts them when they drop.
 
             ### Installation
-            1. Download `SMBWatcher.zip` below
-            2. Unzip and drag `SMBWatcher.app` to `/Applications/`
+            1. Download `SMBWatcher.app` below
+            2. Drag to `/Applications/`
             3. Open SMBWatcher — it appears in the menu bar
 
             > **Note:** This build is unsigned. Right-click > Open the first time, or allow it in System Settings > Privacy & Security.
